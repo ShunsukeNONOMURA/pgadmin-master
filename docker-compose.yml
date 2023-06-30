@@ -1,0 +1,14 @@
+version: '3'
+services:
+  pgadmin:
+    container_name: pgadmin
+    build: .
+    # restart: always
+    ports: 
+      - 8080:80
+    volumes:
+      # ストレージのマウント
+      - ./pgadmin:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: sample
+      PGADMIN_DEFAULT_PASSWORD: sample
