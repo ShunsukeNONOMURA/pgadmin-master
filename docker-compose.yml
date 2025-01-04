@@ -10,5 +10,5 @@ services:
       # ストレージのマウント
       - ./pgadmin:/var/lib/pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: sample
+      PGADMIN_DEFAULT_EMAIL: sample@example.com
       PGADMIN_DEFAULT_PASSWORD: sample
